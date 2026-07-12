@@ -158,6 +158,12 @@
     font-size: 7rem;
     box-shadow: 0 20px 60px rgba(255,173,138,0.35);
     position: relative;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+  }
+  .avatar-wrap img {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: 100%; /* Ajusta el alto al contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
   }
   .avatar-ring {
     position: absolute; inset: -12px; border-radius: 50%;
@@ -324,17 +330,17 @@
   <div class="hero-blob blob2"></div>
   <div class="hero-content">
     <div class="hero-tag">✦ Ingeniera en Sistemas</div>
-    <h1 class="hero-name">Hola, soy<br><span>Rocío Cellini</span></h1>
+    <h1 class="hero-name"><span>Rocío Cellini</span></h1>
     <p class="hero-subtitle">10 años construyendo soluciones fullstack,<br>APIs de alto rendimiento, integraciones para fintech y e-commerce.</p>
     <div class="hero-btns">
       <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
       <a href="#contacto" class="btn-secondary">Contactarme</a>
     </div>
   </div>
-  <div class="scroll-hint">
+  <!-- <div class="scroll-hint">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     scroll
-  </div>
+  </div> -->
 </section>
 
 <!-- SOBRE MÍ -->
@@ -354,12 +360,12 @@
             <div class="stat-label">Años de experiencia</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">50+</div>
+            <div class="stat-num">80+</div>
             <div class="stat-label">Proyectos entregados</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">20+</div>
-            <div class="stat-label">APIs desarrolladas</div>
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Endpoints desarrolladas</div>
           </div>
           <div class="stat-card">
             <div class="stat-num">∞</div>
@@ -369,8 +375,9 @@
       </div>
       <div class="sobre-visual fade-in">
         <div class="avatar-wrap">
-          <div class="avatar-ring"></div>
-          👩‍💻
+          <div class="avatar-ring">           
+          </div>          
+          <img src="images\foto-perfil.jpeg" alt="foto-perfil">
         </div>
       </div>
     </div>
@@ -403,7 +410,7 @@
           <span class="chip">JavaScript</span><span class="chip">React</span>
           <span class="chip">Responsive</span><span class="chip">UX/UI</span>
         </div>
-      </div>
+      </div></br>
       <div class="skill-card fade-in">
         <div class="skill-icon">🏦</div>
         <div class="skill-title">Fintech & E-commerce</div>
